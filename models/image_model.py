@@ -182,14 +182,14 @@ def train_image_model(train_loader, val_loader, epochs=15,
             best_val_acc = val_acc
             no_improve = 0
             torch.save(model.state_dict(), save_path)
-            print(f"  ✅ Model saved (Val Acc: {val_acc:.2f}%)")
+            print(f"  Model saved (Val Acc: {val_acc:.2f}%)")
         else:
             no_improve += 1
             if no_improve >= patience:
                 print(f"  ⏹ Early stopping at epoch {epoch+1}")
                 break
 
-    print(f"\n✅ Best Val Accuracy: {best_val_acc:.2f}%")
+    print(f"\n Best Val Accuracy: {best_val_acc:.2f}%")
     return model
 
 
