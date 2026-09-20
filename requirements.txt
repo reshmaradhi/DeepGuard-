@@ -1,0 +1,15 @@
+streamlit==1.32.0
+torch==2.2.0
+torchvision==0.17.0
+torchaudio==2.2.0
+timm==0.9.16
+opencv-python==4.9.0.80
+numpy==1.26.4
+Pillow==10.2.0
+librosa==0.10.1
+matplotlib==3.8.3
+datasets==2.18.0
+scikit-learn==1.4.2
+tqdm==4.66.2
+grad-cam==1.4.8
+soundfile==0.12.1
